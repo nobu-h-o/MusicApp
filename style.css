@@ -23,7 +23,7 @@ html{
 
 .player{
     width: 35rem;
-    height: 70rem;
+    height: 60rem;
     background: linear-gradient(to right, #313234, #2f3031);
     box-shadow: 0 1rem 5rem rgba(0,0,0,0.4);
     border-radius: 3rem;
@@ -190,6 +190,7 @@ html{
 }
 
 .controls{
+    padding-top: 1rem;
     width: 100%;
     display: flex;
     justify-content: space-between;
@@ -203,23 +204,4 @@ html{
     color: #fff;
     box-shadow: .5rem .5rem 2rem -.1rem rgba(0,0,0,0.8),
     -.8rem -.8rem 2rem -.1rem rgba(255,255,255,0.4);
-}
-
-.player-footer{
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    /*aligns the entire player correctly*/
-    margin-top: auto;
-}
-
-.player-footer i {
-    font-size: 1.8rem;
-    color: #a8a9ab;
-}
-
-.player-footer span {
-    font-size: 1.2rem;
-    color: #a8a9ab;
 }
