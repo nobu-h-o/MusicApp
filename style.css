@@ -1,0 +1,225 @@
+/* select every element with an * */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    font-family: 'Poppins', sans-serif;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+.container{
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(#313131, #151515);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.player{
+    width: 35rem;
+    height: 70rem;
+    background: linear-gradient(to right, #313234, #2f3031);
+    box-shadow: 0 1rem 5rem rgba(0,0,0,0.4);
+    border-radius: 3rem;
+    display: flex;
+    flex-direction: column;
+    padding: 3rem;
+}
+
+.player-top{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.player-btn{
+    width: 4rem;
+    height: 4rem;
+    border: 0.2rem solid rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    background-color: #2b2c2e;
+    color: #a8a9ab;
+    box-shadow: .5rem .5rem 2rem -.1rem rgba(0,0,0,0.5),
+    -.4rem -.4rem 2rem -.1rem rgba(255,255,255,0.2);
+    cursor: pointer;
+}
+
+/* makes the button sink when pressed. */
+.player-btn:active{
+    transform: translateY(.2rem);
+}
+
+.player-top span{
+    font-size: 1.3rem;
+    color: #a8a9ab;
+}
+
+.player-body{
+    width: 100%;
+    height: 55%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.current-song{
+    width: 18rem;
+    height: 18rem;
+    border: .5rem solid rgba(255,255,255,0.15);
+    border-radius: 50%;
+    box-shadow: .6rem .6rem 4rem -.1rem rgba(0,0,0,0.9),
+    -.6rem -.6rem 4rem -.2rem rgba(255,255,255,0.4);
+    position: relative;
+    transform: rotate(-15deg);
+}
+
+.cover{
+    width: 100%;
+    height: 100%;
+    background-color: #101112;
+    border-radius: 50%;
+}
+
+.rotate{
+    animation: coverRotate 10s linear infinite;
+}
+
+@keyframes coverRotate {
+    0%{
+        transform: rotateZ(0);
+    }
+
+    100%{
+        transform: rotateZ(360deg);
+    }
+}
+
+.cover span{
+    font-family: "Delicious Handrawn", cursive;
+    position: absolute;
+    display: block;
+}
+
+.cover span:nth-child(1){
+    color: #ddd;
+    font-size: 1.6rem;
+    top: 20%;
+    left: 30%;
+    text-align: center;
+}
+
+.cover span:nth-child(2){
+    color: #fff;
+    font-size: 2.5rem;
+    top: 35%;
+    left: 20%;
+    width: 10rem;
+    text-align: center;
+}
+
+.song-info{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 3rem;
+}
+
+.song-details{
+    display: flex;
+    flex-direction: column;
+}
+
+
+.song-name{
+    font-size: 2rem;
+    font-weight: 300;
+    color: #fff;
+}
+
+.song-artist{
+    font-size: 1.2rem;
+    color: #a8a9ab;
+}
+
+.song-info i{
+    font-size: 2rem;
+    background: linear-gradient(to right, #3baa7b, #62bc68);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.song-time{
+    width: 100%;
+    height: .5rem;
+    background-color: #0c0c0d;
+    border-radius: .5rem;
+    margin-bottom: 1rem;
+    box-shadow: .2rem .2rem .2rem rgba(255,255,255,0.1);
+    position: relative;
+    cursor: pointer;
+}
+
+.song-progress {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: linear-gradient(to right, #3baa7b, #62bc68);
+    border-radius: .5rem;
+}
+
+.time{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 3rem;
+}
+
+.time span{
+    font-size: 1.2rem;
+    color: #a8a9ab;
+}
+
+.controls{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.play-pause{
+    width: 5rem;
+    height: 5rem;
+    background: linear-gradient(to right, #3baa7b, #62bc68);
+    color: #fff;
+    box-shadow: .5rem .5rem 2rem -.1rem rgba(0,0,0,0.8),
+    -.8rem -.8rem 2rem -.1rem rgba(255,255,255,0.4);
+}
+
+.player-footer{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /*aligns the entire player correctly*/
+    margin-top: auto;
+}
+
+.player-footer i {
+    font-size: 1.8rem;
+    color: #a8a9ab;
+}
+
+.player-footer span {
+    font-size: 1.2rem;
+    color: #a8a9ab;
+}
