@@ -12,10 +12,6 @@ html{
     font-size: 62.5%;
 }
 
-body{
-    overflow: hidden;
-}
-
 .container{
     width: 100%;
     height: 100vh;
@@ -208,4 +204,15 @@ body{
     color: #fff;
     box-shadow: .5rem .5rem 2rem -.1rem rgba(0,0,0,0.8),
     -.8rem -.8rem 2rem -.1rem rgba(255,255,255,0.4);
+}
+
+@media(max-width: 500px){
+    body{
+        overflow: hidden;
+    }
+    .player{
+        position: relative;
+        top: 25%;
+        transform: translateY(-50%);
+    }
 }
