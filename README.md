@@ -13,6 +13,8 @@ https://www.youtube.com/watch?v=4LFGqokvOwI
 https://www.youtube.com/watch?v=BEvkowdXijA
 
 https://www.youtube.com/watch?v=WTsmIbNku5g
+
+Itunes icons created by Muhamad Ulum - Flaticon
 ___
 ## 概要
 HTML、CSS、JavaScriptを利用して作った音楽再生アプリです。
